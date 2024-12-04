@@ -13,7 +13,7 @@ The right subtree of a node contains only nodes with keys greater than the node'
 Both the left and right subtrees must also be binary search trees.
 
 
-  /**
+/**
  * Definition for a binary tree node.
  * public class TreeNode {
  *     int val;
@@ -30,6 +30,27 @@ Both the left and right subtrees must also be binary search trees.
  */
 class Solution {
     public boolean isValidBST(TreeNode root) {
+        // if(root==null)return true;
+        // if(root.left!=null){
+        //     if(root.left.val>root.val){
+        //         return false;
+        //     }} 
+        // if(root.right!=null){
+        //     if(root.right.val<root.val){
+        //         return false;
+        //     }} 
+
+        //     // (root.right!=null && root.right.val<root.val))return false;
+        // return isValidBST(root.left) && isValidBST(root.right);
         
+        return helper(root, Long.MIN_VALUE, Long.MAX_VALUE);
+
+    }
+    public boolean helper(TreeNode node, long min, long max){
+        if(node==null) return true;
+
+        if(node.val<=min || node.val>=max)return false;
+
+        return helper(node.left, min, node.val) && helper(node.right, node.val, max);
     }
 }
