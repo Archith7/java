@@ -30,5 +30,5 @@ class Solution {
 }
 
 //whl:very simple way of finding the islands
-//helper==generalised bfs algo (base cond, marking visited, recursion)
+//helper==generalised dfs algo (base cond, marking visited, recursion)
 //just finding 1, increasing the count , then makin all corresponding 1's as 0
