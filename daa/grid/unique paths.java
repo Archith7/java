@@ -15,3 +15,5 @@ class Solution {
         return aboveRow[n - 1];        
     }
 }
+
+//whl:creating and counting dynamically as we go
