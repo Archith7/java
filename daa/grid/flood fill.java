@@ -54,3 +54,6 @@ public class flood_fill{
 
     }
 }
+
+//whl: creating the grid,
+//traversing through the grid , checking edges and base cond
