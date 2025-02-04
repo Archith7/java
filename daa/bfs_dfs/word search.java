@@ -26,7 +26,9 @@
 // Output: false
 
 
-class Solution {
+import java.util.*;
+
+public class Solution {
     public boolean exist(char[][] board, String word) {
         int m = board.length;
         int n = board[0].length;
@@ -70,5 +72,41 @@ class Solution {
         visited[x][y] = false;
 
         return found;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input board dimensions
+        System.out.print("Enter number of rows: ");
+        int m = scanner.nextInt();
+        System.out.print("Enter number of columns: ");
+        int n = scanner.nextInt();
+
+        char[][] board = new char[m][n];
+
+        // Input board elements
+        System.out.println("Enter the board characters (one character per cell):");
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                board[i][j] = scanner.next().charAt(0);
+            }
+        }
+
+        // Input the word to search
+        System.out.print("Enter the word to search: ");
+        String word = scanner.next();
+
+        Solution solution = new Solution();
+        boolean exists = solution.exist(board, word);
+
+        // Output the result
+        if (exists) {
+            System.out.println("The word exists in the board.");
+        } else {
+            System.out.println("The word does NOT exist in the board.");
+        }
+
+        scanner.close();
     }
 }
