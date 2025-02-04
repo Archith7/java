@@ -9,7 +9,7 @@
 // The process stops when there are no more adjacent pixels of the original color to update.
 // Return the modified image after performing the flood fill.
 
-BFS
+DFS
 
 class Solution {
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
@@ -41,7 +41,7 @@ class Solution {
 
 
 
-DFS
+BFS
 
 
 import java.util.LinkedList;
