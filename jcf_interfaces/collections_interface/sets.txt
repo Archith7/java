@@ -1,0 +1,38 @@
+Methods in HashSet
+
+HashSet is a hash table-based implementation of Set that does not guarantee insertion order.
+
+add(E e): Adds an element.
+remove(Object o): Removes an element.
+contains(Object o): Checks if an element exists.
+size(): Returns the number of elements.
+isEmpty(): Checks if the set is empty.
+clear(): Removes all elements.
+iterator(): Returns an iterator.
+
+****************************************************************************
+
+Methods in LinkedHashSet
+(Same as HashSet)
+
+LinkedHashSet extends HashSet and maintains the insertion order using a doubly-linked list.
+
+add(E e): Adds an element.
+remove(Object o): Removes an element.
+contains(Object o): Checks if an element exists.
+size(): Returns the number of elements.
+clear(): Removes all elements.
+iterator(): Returns an iterator.
+
+******************************************************************************
+
+Methods in TreeSet
+
+TreeSet is an implementation of NavigableSet that stores elements in a sorted order
+
+first(): Returns the first (smallest) element.
+last(): Returns the last (largest) element.
+higher(E e): Returns the smallest element greater than e.
+lower(E e): Returns the largest element smaller than e.
+headSet(E e): Returns elements smaller than e.
+tailSet(E e): Returns elements greater than or equal to e.
