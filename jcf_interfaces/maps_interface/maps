@@ -1,0 +1,55 @@
+1. HashMap<K, V> (Unordered, allows null keys and values)
+A HashMap is an unordered collection that allows one null key and multiple null values. It offers constant-time performance (O(1)) for most operations.
+
+Functions in HashMap
+put(K key, V value) → Inserts or updates a key-value pair.
+putAll(Map<? extends K, ? extends V> map) → Copies all mappings from another map.
+get(Object key) → Retrieves the value associated with a key.
+remove(Object key) → Removes a key-value pair.
+clear() → Removes all key-value pairs.
+containsKey(Object key) → Checks if a key exists.
+containsValue(Object value) → Checks if a value exists.
+isEmpty() → Checks if the map is empty.
+size() → Returns the number of key-value pairs.
+keySet() → Returns a Set of all keys.
+values() → Returns a Collection of all values.
+entrySet() → Returns a Set of all key-value pairs (Map.Entry<K, V>).
+
+
+***********************************************************************************************
+
+2. LinkedHashMap<K, V> (Maintains Insertion Order)
+A LinkedHashMap is similar to HashMap, but it maintains insertion order.
+
+Functions in LinkedHashMap
+Inherits all methods from HashMap
+Maintains the order of insertion
+Allows null keys and values
+Uses a doubly linked list internally for order maintenance
+
+***********************************************************************************************
+
+
+3. TreeMap<K, V> (Sorted by Key, No null Keys Allowed)
+A TreeMap stores entries in sorted order of keys. It uses a Red-Black Tree internally, making operations run in O(log n) time complexity.
+
+Functions in TreeMap
+put(K key, V value) → Inserts a key-value pair in sorted order.
+putAll(Map<? extends K, ? extends V> map) → Copies all mappings and sorts them.
+get(Object key) → Retrieves a value using a key.
+remove(Object key) → Removes a key-value pair.
+clear() → Removes all key-value pairs.
+containsKey(Object key) → Checks if a key exists.
+containsValue(Object value) → Checks if a value exists.
+isEmpty() → Checks if the map is empty.
+size() → Returns the number of key-value pairs.
+firstKey() → Returns the first (lowest) key.
+lastKey() → Returns the last (highest) key.
+higherKey(K key) → Returns the next higher key.
+lowerKey(K key) → Returns the next lower key.
+ceilingKey(K key) → Returns the smallest key ≥ given key.
+floorKey(K key) → Returns the largest key ≤ given key.
+descendingMap() → Returns the map in reverse order.
+headMap(K toKey, boolean inclusive) → Returns a view of keys less than toKey.
+tailMap(K fromKey, boolean inclusive) → Returns a view of keys greater than fromKey.
+subMap(K fromKey, boolean fromInclusive, K toKey, boolean toInclusive) → Returns a range view of the map.
