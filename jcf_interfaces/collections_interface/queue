@@ -1,0 +1,24 @@
+Methods in Queue
+offer(E e): Adds an element to the queue.
+poll(): Removes and returns the front element.
+peek(): Retrieves, but does not remove, the front element.
+remove(): Removes and returns the front element.
+isEmpty(): Checks if the queue is empty.
+size(): Returns the number of elements.
+
+**********************************************************************************
+
+
+Methods in PriorityQueue:PriorityQueue is a queue that arranges elements in natural order (min-heap by default).
+peek(): Retrieves the highest-priority element.
+poll(): Removes the highest-priority element.
+comparator(): Returns the comparator used for ordering
+
+
+**********************************************************************************
+
+Methods in ArrayDeque :ArrayDeque (Double-Ended Queue) allows insertions/removals from both ends.
+addFirst(E e): Inserts at the front.
+addLast(E e): Inserts at the rear.
+removeFirst(): Removes the first element.
+removeLast(): Removes the last element.
