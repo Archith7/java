@@ -1,0 +1,28 @@
+Methods in ArrayList:  ArrayList is a resizable-array implementation of the List interface. It provides fast read operations
+
+add(E e): Adds an element at the end.
+add(int index, E e): Inserts an element at a specific index.
+get(int index): Retrieves an element at a given index.
+set(int index, E e): Updates an element at a given index.
+remove(int index): Removes an element at a given index.
+indexOf(Object o): Returns the index of the first occurrence.
+lastIndexOf(Object o): Returns the last occurrence index.
+size(): Returns the number of elements.
+isEmpty(): Checks if the list is empty.
+contains(Object o): Checks if an element exists.
+clear(): Removes all elements.
+subList(int fromIndex, int toIndex): Returns a portion of the list.
+
+*****************************************************************************************
+
+Methods in LinkedList:LinkedList is a doubly-linked list implementation of the List and Deque interfaces. It is efficient for
+
+
+addFirst(E e): Inserts at the beginning.
+addLast(E e): Inserts at the end.
+removeFirst(): Removes the first element.
+removeLast(): Removes the last element.
+getFirst(): Retrieves the first element.
+getLast(): Retrieves the last element.
+
+****************************************************************************************
